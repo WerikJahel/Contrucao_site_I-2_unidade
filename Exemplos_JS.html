@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <p>
+        <img
+          src=""
+          alt=""
+          id="myImage"
+          onclick="trocarImagem()"
+          width="100"
+          height="180"
+        />
+      </p>
+      <p>Clique na lâmpada para ligar/desligar a luz</p>
+
+      <script>
+        // https://png.pngtree.com/png-vector/20190815/ourlarge/pngtree-light-bulb-icon-vector--light-bulb-ideas-symbol-illustration-png-image_1692654.jpg
+        // https://png.pngtree.com/png-vector/20190828/ourlarge/pngtree-light-bulb-icon-vector-light-bulb-ideas-symbol-illustration-png-image_1715627.jpg
+      </script>
+    </div>
+
+    <!-- <div class="Exemplo_07">
+      <form action="">
+        <div>
+          <label for="form_firstName">First name:</label>
+          <input type="text" name="" id="form_firstName" />
+        </div>
+
+        <div>
+          <label for="form_lastName">Last name:</label>
+          <input type="text" name="" id="form_lastName" />
+        </div>
+
+        <div>
+          <input type="submit" value="Enviar" id="submit" />
+        </div>
+      </form>
+
+      <p></p>
+
+      <script>
+        var form = document.querySelector("form");
+        var form_firstName = document.getElementById("form_firstName");
+        var form_lastName = document.getElementById("form_lastName");
+        var submit = document.getElementById("submit");
+        var para = document.querySelector("p");
+
+        form.onsubmit = function (e) {
+          if (form_firstName.value === "" || form_lastName.value === "") {
+            e.preventDefault();
+            para.textContent = "You need to fill in both names!";
+          }
+        };
+      </script>
+    </div> -->
+
+    <!-- <div class="Exemplo_06">
+      <input class="button" type="button" value="Theme" />
+
+      <script>
+        var btn = document.querySelector(".button");
+
+        function random(number) {
+          return Math.floor(Math.random() * (number + 1));
+        }
+
+        function bgChange(e) {
+          var rndCol =
+            "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
+          e.target.style.backgroundColor = rndCol;
+          console.log(e.target);
+        }
+
+        btn.addEventListener("click", bgChange);
+      </script>
+    </div> -->
+
+    <!-- <div class="Exemplo_05">
+      <input type="button" value="Theme" onclick="bgChange()" />
+
+      <script>
+        var btn = document.querySelector("button");
+
+        function random(number) {
+          return Math.floor(Math.random() * (number + 1));
+        }
+
+        function bgChange() {
+          var rndCol =
+            "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
+          document.body.style.backgroundColor = rndCol;
+        }
+
+        btn.addEventListener("click", bgChange);
+      </script>
+    </div> -->
+
+    <!-- <div class="Exemplo_04">
+      <div
+        onmousedown="mDown(this)"
+        onmouseup="mUp(this)"
+        style="
+          background-color: #d94a38;
+          width: 90px;
+          height: 20px;
+          padding: 40px;
+        "
+      >
+        Clique aqui
+      </div>
+
+      <script>
+        function mDown(obj) {
+          obj.style.backgroundColor = "#1ec5e5";
+          obj.innerHTML = "Solte o clique";
+        }
+
+        function mUp(obj) {
+          obj.style.backgroundColor = "#d94a38";
+          obj.innerHTML = "Obrigado!";
+        }
+      </script>
+    </div> -->
+
+    <!-- <div class="Exemplo_03">
+      <label for="form_name">Insira seu nome</label>
+      <input
+        type="text"
+        id="form_name"
+        onchange="caixaAlta()"
+        maxlength="100"
+      />
+
+      <script>
+        function caixaAlta() {
+          var x = document.getElementById("form_name");
+          x.value = x.value.toUpperCase();
+        }
+      </script>
+    </div> -->
+
+    <!-- <div class="Exemplo_02" onload="checkCookies()">
+      <script>
+        function checkCookies() {
+          if (navigator.cookieEnabled == true) {
+            // é as mesma cois que navigator.cookieEnabled, se trata apenas de uma questão de visibilidade
+            alert("Cookies são permitidos");
+          } else {
+            alert("Cookies não são permitidos");
+          }
+        }
+      </script>
+    </div> -->
+
+    <!-- <div class="Exemplo_01">
+      <script></script>
+    </div> -->
+  </body>
+</html>
